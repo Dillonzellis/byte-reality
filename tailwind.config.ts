@@ -20,6 +20,12 @@ const config: Config = {
         accentBlue: {
           400: "var(--accentBlue-400)",
         },
+        brandingPurple: {
+          400: "var(--brandingPurple-400)",
+        },
+        brandingGreen: {
+          400: "var(--brandingGreen-400)",
+        },
       },
     },
   },

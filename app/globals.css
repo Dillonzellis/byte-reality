@@ -6,9 +6,17 @@
   --brandingBlue-400: #325888;
 
   --accentBlue-400: #01b2e7;
+
+  --brandingPurple-400: #65479a;
+  --brandingGreen-400: #c9db88;
 }
 
-.full-bleed {
+.full-bleed-blue {
   box-shadow: 0 0 0 100vmax var(--brandingBlue-400);
+  clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-purple {
+  box-shadow: 0 0 0 100vmax var(--brandingPurple-400);
   clip-path: inset(0 -100vmax);
 }

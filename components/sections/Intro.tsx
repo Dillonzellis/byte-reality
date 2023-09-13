@@ -8,23 +8,28 @@ export const Intro = () => {
     <Section sectionName="intro tw-relative">
       <Container>
         <div className="tw-grid tw-grid-cols-2">
-          <Image src={introImg} alt="intro image" />
+          <Image src={introImg} alt="intro image" className="tw-z-20" />
           <div className="tw-space-y-2">
-            <div className="tw-text-4xl tw-font-bold">
+            <div className="tw-text-4xl tw-font-semibold">
               Fun, Safe, and Interactive
             </div>
-            <div className="tw-font-serif tw-text-brandingBlue-400 tw-font-bold tw-text-3xl">
-              Bite of Reality
-            </div>
-            <div className="tw-bg-brandingBlue-400 tw-text-white full-bleed">
-              Bite of Reality is a hands-on app-based simulation that appeals to
-              teens while giving them a taste of real-world financial realities.
-              Teens are given a fictional occupation, salary, credit score,
-              spouse and a child, student loan debt, credit card debt, and
-              medical insurance payments. The teens then walk around to various
-              table-top stations to “purchase” housing, transportation, food,
-              clothing, and other needs. Fortunately, the game also includes a
-              “credit union” to help with their financial needs.
+            <div>
+              <div className="full-bleed-purple tw-bg-brandingPurple-400 tw-py-2">
+                <div className="tw-font-serif tw-text-brandingGreen-400 tw-pb-2 tw-font-bold tw-text-4xl">
+                  Bite of Reality
+                </div>
+                <div className="tw-text-white">
+                  Bite of Reality is a hands-on app-based simulation that
+                  appeals to teens while giving them a taste of real-world
+                  financial realities. Teens are given a fictional occupation,
+                  salary, credit score, spouse and a child, student loan debt,
+                  credit card debt, and medical insurance payments. The teens
+                  then walk around to various table-top stations to “purchase”
+                  housing, transportation, food, clothing, and other needs.
+                  Fortunately, the game also includes a “credit union” to help
+                  with their financial needs.
+                </div>
+              </div>
             </div>
             <div>
               This interactive activity will teach teens how to make financial
