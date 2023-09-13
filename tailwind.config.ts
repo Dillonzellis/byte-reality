@@ -15,10 +15,10 @@ const config: Config = {
       },
       colors: {
         brandingBlue: {
-          400: "#325888",
+          400: "var(--brandingBlue-400)",
         },
         accentBlue: {
-          400: "#01B2E7",
+          400: "var(--accentBlue-400)",
         },
       },
     },
