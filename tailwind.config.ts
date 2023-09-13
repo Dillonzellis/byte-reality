@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-mont)"],
+        serif: ["var(--font-dancing)"],
+      },
       colors: {
         brandingBlue: {
           400: "#325888",
