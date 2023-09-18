@@ -1,21 +1,23 @@
 import Image from "next/image";
-import introImg from "@/public/bite-reality.jpg";
-import intronew from "@/public/bite-intro.png";
 import intronewNoBg from "@/public/bite-into-no-bg.png";
-import { Container } from "../ui/Container";
-import { Section } from "../ui/Section";
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 
 export const Intro = () => {
   return (
     <Section sectionName="intro tw-relative">
       <Container>
         <div className="tw-grid tw-grid-cols-2">
-          <Image
-            src={intronewNoBg}
-            alt="intro image"
-            className="tw-z-20 tw-bg-brandingGreen-400 tw-rounded-md tw-shadow-zinc-800/30 tw-shadow-md"
-            width={400}
-          />
+          <div className="tw-relative">
+            <Image
+              src={intronewNoBg}
+              alt="intro image"
+              className="tw-z-30 tw-relative tw-bg-brandingGreen-400 tw-rounded-md tw-shadow-zinc-800/30 tw-shadow-md"
+              width={400}
+              height={450}
+            />
+            <div className="tw-z-20 tw-w-[400px] tw-rounded-md tw-h-[450px] tw-drop-shadow-lg tw-left-[23px] tw-top-[23px] tw-border-4 tw-border-brandingGreen-400 tw-absolute"></div>
+          </div>
           <div className="tw-space-y-2">
             <div className="tw-text-4xl tw-font-semibold">
               Fun, Safe, and Interactive

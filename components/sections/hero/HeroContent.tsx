@@ -1,17 +1,9 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 import logo from "@/public/biteofreality-logo.png";
 
 export const HeroContent = () => {
   return (
-    <motion.div
-      className="tw-absolute tw-top-1/2 tw-w-[950px]"
-      initial={{ opacity: 0, x: "0%", y: "-50%" }}
-      animate={{ opacity: 1, x: "50%" }}
-      transition={{ duration: 0.3 }}
-    >
+    <div className="tw-absolute tw-top-1/2 tw-left-1/2 tw-w-[950px] tw--translate-y-1/2 tw--translate-x-1/2">
       <div className="tw-flex tw-gap-8 tw-items-center tw-bg-white tw-p-4 tw-rounded-lg tw-shadow-lg">
         <div>
           <Image className="tw-drop-shadow-md" src={logo} alt="logo" />
@@ -26,6 +18,6 @@ export const HeroContent = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
