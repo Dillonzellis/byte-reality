@@ -12,11 +12,11 @@ export const Intro = () => {
             <Image
               src={intronewNoBg}
               alt="intro image"
-              className="tw-z-30 tw-relative tw-bg-brandingGreen-400 tw-rounded-md tw-shadow-zinc-800/30 tw-shadow-md"
+              className="tw-relative tw-z-30 tw-rounded-md tw-bg-brandingGreen-400 tw-shadow-md tw-shadow-zinc-800/30"
               width={400}
               height={450}
             />
-            <div className="tw-z-20 tw-w-[400px] tw-rounded-md tw-h-[450px] tw-drop-shadow-lg tw-left-[23px] tw-top-[23px] tw-border-4 tw-border-brandingGreen-400 tw-absolute"></div>
+            <div className="tw-absolute tw-left-[23px] tw-top-[23px] tw-z-20 tw-h-[450px] tw-w-[400px] tw-rounded-md tw-border-4 tw-border-brandingGreen-400 tw-drop-shadow-lg"></div>
           </div>
           <div className="tw-space-y-2">
             <div className="tw-text-4xl tw-font-semibold">
@@ -24,7 +24,7 @@ export const Intro = () => {
             </div>
             <div>
               <div className="full-bleed-purple tw-bg-brandingPurple-400 tw-py-2">
-                <div className="tw-font-serif tw-text-brandingGreen-400 tw-pb-2 tw-font-bold tw-text-4xl">
+                <div className="tw-pb-2 tw-font-serif tw-text-4xl tw-font-bold tw-text-brandingGreen-400">
                   Bite of Reality
                 </div>
                 <hr className="tw-pb-2" />
