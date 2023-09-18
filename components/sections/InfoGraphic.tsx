@@ -1,0 +1,39 @@
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+
+import { cardsContent } from "@/lib/data/cards";
+
+type cardsContentType = (typeof cardsContent)[number];
+
+type CardProps = cardsContentType;
+
+const Card = ({ icon, total, content }: CardProps) => {
+  return (
+    <div className="tw-group tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-6 tw-rounded-lg tw-bg-brandingBlue-400 tw-px-4 tw-py-12 tw-shadow-lg tw-shadow-zinc-800/30 tw-transition hover:tw-bg-brandingGreen-400">
+      <div className="tw-flex tw-h-32 tw-w-32 tw-items-center tw-justify-center tw-rounded-full tw-border-4 tw-border-brandingGreen-400 tw-bg-white group-hover:tw-border-brandingPurple-400">
+        {icon}
+      </div>
+      <div className="tw-text-center tw-text-white group-hover:tw-text-zinc-800">
+        <div className="tw-pb-1 tw-font-serif tw-text-6xl tw-font-semibold">
+          {total}
+        </div>
+        <hr className="tw-pb-6 group-hover:tw-border-zinc-800" />
+        <div className="tw-text-xl tw-capitalize">{content}</div>
+      </div>
+    </div>
+  );
+};
+
+export const InfoGraphic = () => {
+  return (
+    <Section sectionName="infographic">
+      <Container>
+        <div className="tw-grid tw-grid-cols-3 tw-gap-8">
+          {cardsContent.map((card, idx) => (
+            <Card key={idx} {...card} />
+          ))}
+        </div>
+      </Container>
+    </Section>
+  );
+};
