@@ -15,7 +15,6 @@ export const VideoSection = () => {
                 className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-rounded-lg tw-shadow tw-shadow-zinc-800/30"
                 src="https://www.youtube.com/embed/gq8gqsymlH0?si=Xpccr5ii5gzVJex4"
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
