@@ -7,24 +7,24 @@ export const Intro = () => {
   return (
     <Section sectionName="intro tw-relative">
       <Container>
-        <div className="tw-grid tw-grid-cols-2">
-          <div className="tw-relative">
+        <div className="tw-grid lg:tw-grid-cols-2">
+          <div className="tw-relative tw-pb-8 lg:tw-pb-[unset]">
             <Image
               src={intronewNoBg}
               alt="intro image"
-              className="tw-relative tw-z-30 tw-rounded-md tw-bg-brandingGreen-400 tw-shadow-md tw-shadow-zinc-800/30"
+              className="tw-relative tw-z-30 tw-mx-auto tw-rounded-md tw-bg-brandingGreen-400 tw-shadow-md tw-shadow-zinc-800/30 lg:tw-m-[unset]"
               width={400}
               height={450}
             />
-            <div className="tw-absolute tw-left-[23px] tw-top-[23px] tw-z-20 tw-h-[450px] tw-w-[400px] tw-rounded-md tw-border-4 tw-border-brandingGreen-400 tw-drop-shadow-lg"></div>
+            <div className="tw-absolute tw-left-[23px] tw-top-[23px] tw-z-20 tw-hidden tw-h-[450px] tw-w-[400px] tw-rounded-md tw-border-4 tw-border-brandingGreen-400 tw-drop-shadow-lg lg:tw-block"></div>
           </div>
           <div className="tw-space-y-2">
-            <div className="tw-text-4xl tw-font-semibold">
+            <div className="tw-text-2xl tw-font-semibold sm:tw-text-4xl">
               Fun, Safe, and Interactive
             </div>
             <div>
               <div className="full-bleed-purple tw-bg-brandingPurple-400 tw-py-2">
-                <div className="tw-pb-2 tw-font-serif tw-text-4xl tw-font-bold tw-text-brandingGreen-400">
+                <div className="tw-pb-2 tw-font-serif tw-text-2xl tw-font-bold tw-text-brandingGreen-400 sm:tw-text-4xl">
                   Bite of Reality
                 </div>
                 <hr className="tw-pb-2" />
