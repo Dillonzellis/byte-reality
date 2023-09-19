@@ -1,3 +1,4 @@
+import { Resources } from "@/components/sections/Resources";
 import { Benefits } from "@/components/sections/Benefits";
 import { Chapter } from "@/components/sections/Chapter";
 import { ImgCollage } from "@/components/sections/ImgCollage";
@@ -16,6 +17,7 @@ export default function Home() {
       <Benefits />
       <ImgCollage />
       <Chapter />
+      <Resources />
     </main>
   );
 }
