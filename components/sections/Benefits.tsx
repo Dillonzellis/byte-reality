@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { Container } from "../ui/Container";
 import { benefits } from "@/lib/data/benefits";
-import { Button } from "../ui/Button";
+import { List } from "../ui/List";
 
 export const Benefits = () => {
   return (
@@ -15,12 +15,8 @@ export const Benefits = () => {
           of Bite of Reality?
         </div>
         <div className="tw-grid tw-grid-cols-2 tw-gap-8">
-          <div className="">
-            <ul className="tw-list-inside tw-list-disc">
-              {benefits.map((li) => (
-                <li className="tw-text-lg">{li}</li>
-              ))}
-            </ul>
+          <div>
+            <List array={benefits} />
           </div>
           <div
             className="tw-relative tw-w-full"
