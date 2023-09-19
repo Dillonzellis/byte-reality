@@ -24,7 +24,7 @@ export const ImgCollage = () => {
             key={idx}
             src={img}
             alt=""
-            className={`tw-max-w-[400px] tw-object-cover tw-shadow-lg tw-shadow-zinc-800/30 tw-brightness-75 ${getCornerClasses(
+            className={`tw-w-full tw-max-w-[400px] tw-object-cover tw-shadow-lg tw-shadow-zinc-800/30 tw-brightness-75 ${getCornerClasses(
               idx,
             )}`}
           />
@@ -37,13 +37,13 @@ export const ImgCollage = () => {
 function getCornerClasses(index: number) {
   switch (index) {
     case 0:
-      return "tw-rounded-tl-lg";
+      return "md:tw-rounded-tl-lg";
     case 2:
-      return "tw-rounded-tr-lg";
+      return "md:tw-rounded-tr-lg";
     case 6:
-      return "tw-rounded-bl-lg";
+      return "md:tw-rounded-bl-lg";
     case 8:
-      return "tw-rounded-br-lg";
+      return "md:tw-rounded-br-lg";
     default:
       return "";
   }
