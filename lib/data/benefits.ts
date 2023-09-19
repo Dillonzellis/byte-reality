@@ -17,4 +17,4 @@ export const need = [
   "1.5 hours for simulation and debrief",
   "50+ teens (target is grades 8–12)",
   "A facilitator",
-];
+] as const;
