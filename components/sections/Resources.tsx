@@ -26,8 +26,8 @@ export const Resources = () => {
             Event Resources
           </div>
           <ul className="tw-list-inside tw-list-disc tw-pt-4">
-            {resources.map((resource) => (
-              <li className="tw-text-lg">
+            {resources.map((resource, idx) => (
+              <li key={idx} className="tw-text-lg">
                 <a
                   className="tw-capitalize tw-transition hover:tw-text-brandingGreen-400"
                   href={resource.href}
