@@ -18,16 +18,33 @@ export const ImgCollage = () => {
 
   return (
     <Section sectionName="img-collage">
-      <div className="tw-flex tw-flex-wrap tw-justify-center tw-bg-brandingBlue-400 tw-py-8">
-        {images.map((img, index) => (
+      <div className="tw-flex tw-flex-wrap tw-justify-center tw-bg-brandingBlue-400 tw-py-8 tw-shadow-lg tw-shadow-zinc-800/30">
+        {images.map((img, idx) => (
           <Image
-            key={index}
+            key={idx}
             src={img}
             alt=""
-            className="tw-max-w-[400px] tw-object-cover tw-brightness-75"
+            className={`tw-max-w-[400px] tw-object-cover tw-shadow-lg tw-shadow-zinc-800/30 tw-brightness-75 ${getCornerClasses(
+              idx,
+            )}`}
           />
         ))}
       </div>
     </Section>
   );
 };
+
+function getCornerClasses(index: number) {
+  switch (index) {
+    case 0:
+      return "tw-rounded-tl-lg";
+    case 2:
+      return "tw-rounded-tr-lg";
+    case 6:
+      return "tw-rounded-bl-lg";
+    case 8:
+      return "tw-rounded-br-lg";
+    default:
+      return "";
+  }
+}
