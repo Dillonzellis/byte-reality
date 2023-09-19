@@ -15,7 +15,7 @@ export const Benefits = () => {
           </span>{" "}
           of Bite of Reality?
         </SectionTitle>
-        <div className="tw-grid tw-grid-cols-2 tw-gap-8">
+        <div className="tw-grid tw-gap-8 md:tw-grid-cols-2">
           <div>
             <List array={benefits} />
           </div>
