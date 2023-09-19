@@ -19,7 +19,7 @@ const Card = ({ icon, total, content }: CardProps) => {
         />
       </div>
       <div className="tw-text-center tw-text-white group-hover:tw-text-zinc-800">
-        <div className="tw-pb-1 tw-text-6xl tw-font-semibold tw-underline tw-decoration-brandingGreen-400 group-hover:tw-decoration-brandingPurple-400">
+        <div className="tw-pb-4 tw-text-6xl tw-font-semibold tw-underline tw-decoration-brandingGreen-400 group-hover:tw-decoration-brandingPurple-400">
           {total}
         </div>
         <div className="tw-text-xl tw-capitalize">{content}</div>
@@ -32,7 +32,7 @@ export const InfoGraphic = () => {
   return (
     <Section sectionName="infographic">
       <Container>
-        <div className="tw-grid tw-grid-cols-3 tw-gap-8">
+        <div className="tw-grid tw-gap-8 md:tw-grid-cols-3">
           {cardsContent.map((card, idx) => (
             <Card key={idx} {...card} />
           ))}
