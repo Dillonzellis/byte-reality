@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { participate, need } from "@/lib/data/benefits";
 import bite from "@/public/bite-reality.jpg";
+import { Button } from "../ui/Button";
 
 export const Chapter = () => {
   return (
@@ -20,15 +21,25 @@ export const Chapter = () => {
             />
           </div>
           <div>
-            <SectionTitle>
-              How can my chapter or credit union participate?
-            </SectionTitle>
-            <List array={participate} />
-            <SectionTitle>
-              What does my chapter or credit union need to put on a Bite of
-              Reality event?
-            </SectionTitle>
-            <List array={need} />
+            <div className="tw-pb-8">
+              <SectionTitle className="tw-mb-4 tw-w-full tw-bg-brandingPurple-400 tw-text-xl">
+                How can my chapter or credit union{" "}
+                <span className="tw-font-bold tw-underline tw-decoration-brandingGreen-400">
+                  participate?
+                </span>
+              </SectionTitle>
+              <List array={participate} />
+            </div>
+            <div className="tw-pb-8">
+              <SectionTitle className="tw-mb-4 tw-w-full tw-bg-brandingPurple-400 tw-text-xl">
+                What does my chapter or credit union{" "}
+                <span className="tw-font-bold tw-underline tw-decoration-brandingGreen-400">
+                  need
+                </span>{" "}
+                to put on a Bite of Reality event?
+              </SectionTitle>
+              <List array={need} />
+            </div>
           </div>
         </div>
       </Container>
