@@ -17,7 +17,7 @@ export default function Home() {
       <Benefits />
       <ImgCollage />
       <Chapter />
-      <Resources />
+      {/* <Resources /> */}
     </main>
   );
 }

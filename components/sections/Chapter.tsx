@@ -6,18 +6,17 @@ import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { participate, need } from "@/lib/data/benefits";
 import bite from "@/public/bite-reality.jpg";
-import { Button } from "../ui/Button";
 
 export const Chapter = () => {
   return (
     <Section sectionName="chapter">
       <Container>
-        <div className="tw-grid tw-grid-cols-2 tw-items-center">
+        <div className="tw-grid tw-items-center lg:tw-grid-cols-2 lg:tw-gap-4">
           <div>
             <Image
               src={bite}
               alt=""
-              className="tw-rounded-lg tw-object-fill tw-shadow-lg tw-shadow-zinc-800/30"
+              className="tw-mx-auto tw-mb-8 tw-rounded-lg tw-object-fill tw-shadow-lg tw-shadow-zinc-800/30 lg:tw-m-[unset]"
             />
           </div>
           <div>
