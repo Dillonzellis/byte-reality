@@ -24,7 +24,7 @@ export const Benefits = () => {
             style={{ paddingBottom: "56.25%" }}
           >
             <iframe
-              className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-rounded-lg tw-shadow tw-shadow-zinc-800/30"
+              className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-rounded-lg tw-shadow-lg tw-shadow-zinc-800/30"
               src="https://www.youtube.com/embed/ppHQ9k4xAkU?si=hBWWGJumjQebFYq7"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

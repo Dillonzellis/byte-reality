@@ -1,4 +1,5 @@
 import { Benefits } from "@/components/sections/Benefits";
+import { Chapter } from "@/components/sections/Chapter";
 import { InfoGraphic } from "@/components/sections/InfoGraphic";
 import { VideoSection } from "@/components/sections/VideoSection";
 import { Hero } from "@/components/sections/hero/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <InfoGraphic />
       <VideoSection />
       <Benefits />
+      <Chapter />
     </main>
   );
 }
