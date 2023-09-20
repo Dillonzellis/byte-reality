@@ -24,7 +24,7 @@ export const ImgCollage = () => {
             key={idx}
             src={img}
             alt=""
-            className={`tw-w-full tw-max-w-[400px] tw-object-cover tw-shadow-lg tw-shadow-zinc-800/30 tw-brightness-75 ${getCornerClasses(
+            className={`tw-w-full tw-max-w-[400px] tw-object-cover tw-shadow-lg tw-shadow-zinc-800/30 ${getCornerClasses(
               idx,
             )}`}
           />
