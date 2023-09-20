@@ -1,47 +1,65 @@
-import Image from "next/image";
-
 import { Container } from "@/components/ui/Container";
 import { List } from "@/components/ui/List";
 import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { participate, need } from "@/lib/data/benefits";
-import bite from "@/public/bite-reality.jpg";
+
+type SubHeaderProps = React.HTMLAttributes<HTMLDivElement>;
+
+const SubHeader = ({ children }: SubHeaderProps) => {
+  return <div className="tw-pb-1 tw-text-lg tw-font-medium">{children}</div>;
+};
 
 export const Chapter = () => {
   return (
     <Section sectionName="chapter">
       <Container>
-        <div className="tw-grid tw-items-center lg:tw-grid-cols-2 lg:tw-gap-4">
-          <div>
-            <Image
-              src={bite}
-              alt=""
-              className="tw-mx-auto tw-mb-8 tw-rounded-lg tw-object-fill tw-shadow-lg tw-shadow-zinc-800/30 lg:tw-m-[unset]"
-            />
+        <div className="tw-grid tw-items-center lg:tw-grid-cols-2 lg:tw-gap-12">
+          <div
+            className="tw-relative tw-w-full"
+            style={{ paddingBottom: "56.25%" }}
+          >
+            <iframe
+              className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-rounded-lg tw-shadow-lg tw-shadow-zinc-800/30"
+              src="https://www.youtube.com/embed/ppHQ9k4xAkU?si=hBWWGJumjQebFYq7"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
           <div>
             <div className="tw-pb-8">
-              <SectionTitle className="tw-w-full tw-bg-brandingPurple-400 tw-text-xl md:tw-mb-8">
+              <SectionTitle
+                intent="purple"
+                width="full"
+                size="small"
+                className="md:tw-mb-8"
+              >
                 How can my chapter or credit union{" "}
                 <span className="tw-font-bold tw-underline tw-decoration-brandingGreen-400">
                   participate?
                 </span>
               </SectionTitle>
-              <div className="tw-pb-2 tw-text-lg tw-font-medium md:tw-text-xl">
+              <SubHeader>
                 Contact the Southeastern Credit Union Foundation, which will
                 supply:
-              </div>
-              <List array={participate} />
+              </SubHeader>
+              <List size="small" array={participate} />
             </div>
             <div className="tw-pb-8">
-              <SectionTitle className="tw-mb-6 tw-w-full tw-bg-brandingPurple-400 tw-text-xl">
+              <SectionTitle
+                intent="purple"
+                width="full"
+                size="small"
+                className="md:tw-mb-8"
+              >
                 What does my chapter or credit union{" "}
                 <span className="tw-font-bold tw-underline tw-decoration-brandingGreen-400">
                   need
                 </span>{" "}
                 to put on a Bite of Reality event?
               </SectionTitle>
-              <List array={need} />
+              <List size="small" array={need} />
             </div>
           </div>
         </div>
