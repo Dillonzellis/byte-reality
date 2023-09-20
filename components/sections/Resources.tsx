@@ -5,15 +5,15 @@ import { Section } from "../ui/Section";
 const resources = [
   {
     label: "Facilitator Guide",
-    href: "",
+    href: "https://lscu.coop/foundation/bite-of-reality/docs/facilitatorguide.pdf",
   },
   {
     label: "Merchant Directions",
-    href: "",
+    href: "https://lscu.coop/foundation/bite-of-reality/docs/merchantsheets.pdf",
   },
   {
     label: "request event code",
-    href: "",
+    href: "https://lscu.coop/foundation/bite-of-reality/form.php",
   },
 ];
 
