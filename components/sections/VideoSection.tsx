@@ -6,6 +6,9 @@ export const VideoSection = () => {
     <Section sectionName="videos">
       <div className="tw-bg-brandingPurple-400 tw-py-12">
         <Container>
+          <div className="tw-pb-8 tw-text-center tw-text-3xl tw-font-semibold tw-uppercase tw-text-white tw-underline tw-decoration-brandingGreen-400 md:tw-text-5xl">
+            what is bite of reality?
+          </div>
           <div className="">
             <div
               className="tw-relative tw-w-full"
