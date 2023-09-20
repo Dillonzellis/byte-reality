@@ -21,12 +21,16 @@ export const Chapter = () => {
           </div>
           <div>
             <div className="tw-pb-8">
-              <SectionTitle className="tw-mb-6 tw-w-full tw-bg-brandingPurple-400 tw-text-xl">
+              <SectionTitle className="tw-w-full tw-bg-brandingPurple-400 tw-text-xl md:tw-mb-8">
                 How can my chapter or credit union{" "}
                 <span className="tw-font-bold tw-underline tw-decoration-brandingGreen-400">
                   participate?
                 </span>
               </SectionTitle>
+              <div className="tw-pb-2 tw-text-lg tw-font-medium md:tw-text-xl">
+                Contact the Southeastern Credit Union Foundation, which will
+                supply:
+              </div>
               <List array={participate} />
             </div>
             <div className="tw-pb-8">
