@@ -14,18 +14,23 @@ export const Chapter = () => {
   return (
     <Section sectionName="chapter">
       <Container>
-        <div className="tw-grid tw-items-center lg:tw-grid-cols-2 lg:tw-gap-12">
-          <div
-            className="tw-relative tw-w-full"
-            style={{ paddingBottom: "56.25%" }}
-          >
-            <iframe
-              className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-rounded-lg tw-shadow-lg tw-shadow-zinc-800/30"
-              src="https://www.youtube.com/embed/ppHQ9k4xAkU?si=hBWWGJumjQebFYq7"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+        <div className="tw-grid tw-items-center tw-gap-8 lg:tw-grid-cols-2 lg:tw-gap-12">
+          <div>
+            <div className="tw-pb-4 tw-text-2xl tw-font-semibold tw-capitalize tw-underline tw-decoration-brandingGreen-400 md:tw-text-3xl">
+              volunteer training video
+            </div>
+            <div
+              className="tw-relative tw-w-full"
+              style={{ paddingBottom: "56.25%" }}
+            >
+              <iframe
+                className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-rounded-lg tw-shadow-lg tw-shadow-zinc-800/30"
+                src="https://www.youtube.com/embed/ppHQ9k4xAkU?si=hBWWGJumjQebFYq7"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <div>
             <div className="tw-pb-8">
