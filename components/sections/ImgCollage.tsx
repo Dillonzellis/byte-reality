@@ -17,8 +17,8 @@ export const ImgCollage = () => {
   const images = [one, two, three, four, five, six, seven, eight, nine];
 
   return (
-    <Section sectionName="img-collage">
-      <div className="tw-flex tw-flex-wrap tw-justify-center tw-bg-brandingBlue-400 tw-py-8 tw-shadow-lg tw-shadow-zinc-800/30">
+    <Section sectionName="img-collage" className="tw-bg-brandingBlue-400 ">
+      <div className="tw-mx-auto tw-flex tw-w-full tw-max-w-[1500px] tw-flex-wrap tw-justify-center tw-py-8 ">
         {images.map((img, idx) => (
           <Image
             key={idx}
