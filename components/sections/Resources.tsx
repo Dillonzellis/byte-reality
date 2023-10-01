@@ -1,15 +1,14 @@
 import { Container } from "../ui/Container";
-import { List } from "../ui/List";
 import { Section } from "../ui/Section";
 
 const resources = [
   {
-    label: "Facilitator Guide",
-    href: "https://lscu.coop/foundation/bite-of-reality/docs/facilitatorguide.pdf",
+    label: "App Download Instructions – STUDENT VERSION",
+    href: "https://lscu.coop/foundation/bite-of-reality/docs/Bite-of-reality-flyer-nonstudents.pdf",
   },
   {
-    label: "Merchant Directions",
-    href: "https://lscu.coop/foundation/bite-of-reality/docs/merchantsheets.pdf",
+    label: "App Download Instructions – NON-STUDENT VERSION",
+    href: "https://lscu.coop/foundation/bite-of-reality/docs/Bite-of-reality-flyer-students.pdf",
   },
   {
     label: "request event code",
